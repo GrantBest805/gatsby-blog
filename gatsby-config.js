@@ -2,6 +2,7 @@ module.exports = {
   siteMetadata: {
     title: `My Blog`,
     description: `Sweet Place To Blog`,
+    siteUrl: "https://frosty-cray-7713be.netlify.com/",
     author: `Grant Best`,
   },
   plugins: [
@@ -24,6 +25,7 @@ module.exports = {
     `gatsby-transformer-remark`,
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
+    `gatsby-plugin-sitemap`,
 
     {
       resolve: `gatsby-plugin-manifest`,
@@ -37,6 +39,7 @@ module.exports = {
         icon: `src/images/gatsby-icon.png`, // This path is relative to the root of the site.
       },
     },
+    `gatsby-plugin-netlify-cms`,
     `gatsby-plugin-netlify`,
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.dev/offline

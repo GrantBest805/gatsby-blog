@@ -22,7 +22,7 @@ exports.createPages = ({ graphql, actions }) => {
           path: `/posts${node.frontmatter.path}`,
           component: path.resolve('./src/components/postLayout.js'),
           context: {
-            slug: node.frontmatter.path,
+            slug: node.frontmatter.path
           },
         })
       })

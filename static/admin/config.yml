@@ -11,7 +11,7 @@ collections:
     label: "Team"
     folder: "src/team"
     create: true
-    slug: "{{slug}}"
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
     fields:
       - { label: "Team Member", name: "title", widget: "string" }
       - { label: "Bio", name: "bio", widget: "markdown" }
@@ -24,5 +24,5 @@ collections:
     fields:
       - { label: "Title", name: "title", widget: "string" }
       - { label: "Publish Date", name: "date", widget: "datetime" }
-      - { label: "Description", name: "description", widget: "string" }
-      - { label: "Body", name: "body", widget: "markdown" }
+      - { label: "Html", name: "html", widget: "markdown" }
+      - { label: "Path", name: "path", widget: "string" }
